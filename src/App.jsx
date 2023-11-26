@@ -1,21 +1,13 @@
+import Header from "./Components/header"
+import Footer from "./components/Footer"
+import About from "./components/Section"
+
 function App() {
-  const person = {
-    name: "Gabriel",
-    module: "M3",
-    age: 28,
-  };
-
-  const alertName = () => {
-    alert(person.name);
-  }
-
   return (
     <>
-      <li>
-        <h3>{person.name} - {person.module}</h3>
-        <p>Tenho: {person.age} anos</p>
-        <button onClick={alertName}>Quem sou eu?</button>
-      </li>
+      <Header />
+      <Footer />
+      <About />
     </>
   )
 }
