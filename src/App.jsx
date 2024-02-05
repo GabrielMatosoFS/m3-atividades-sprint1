@@ -1,13 +1,23 @@
-import Header from "./Components/header"
-import Footer from "./components/Footer"
-import About from "./components/Section"
-
 function App() {
+  const person = {
+    name: "Gabriel",
+    module: "M3",
+    age: 28,
+  };
+
+  const alertName = () => {
+    alert(person.name);
+  }
+  
+
   return (
     <>
-      <Header />
-      <Footer />
-      <About />
+      <li>
+        <h3>{person.name} - {person.module}</h3>
+        <p>tenho {person.age} anos</p>
+        <button onClick={alertName}>Quem sou eu?</button>
+      </li>
+
     </>
   )
 }
