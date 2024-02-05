@@ -1,3 +1,7 @@
+import AboutSection from "./components/AboutSection";
+import Footer from "./components/Footer";
+import Header from "./components/Header";
+
 function App() {
   const person = {
     name: "Gabriel",
@@ -18,6 +22,9 @@ function App() {
         <button onClick={alertName}>Quem sou eu?</button>
       </li>
 
+      <Header />
+      <AboutSection />
+      <Footer />
     </>
   )
 }
