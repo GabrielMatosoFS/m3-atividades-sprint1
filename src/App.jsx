@@ -2,6 +2,8 @@ import AboutSection from "./components/AboutSection";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
 import PersonCard from "./components/PersonCard";
+import StudentCard from "./components/StudentCard";
+
 
 function App() {
   const person = {
@@ -28,6 +30,14 @@ function App() {
       <Footer />
 
       <PersonCard name={"Gabriel"} surname={"Matoso"} age={28} />
+
+      <StudentCard name={"Fernanda"} age={28} country={"Brasil"}>
+      </StudentCard>
+      <StudentCard name={"Daniel"} age={25} country={"Paraguai"}></StudentCard>
+
+      
+      
+    
     </>
   )
 }
