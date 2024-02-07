@@ -1,6 +1,7 @@
 import AboutSection from "./components/AboutSection";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
+import PersonCard from "./components/PersonCard";
 
 function App() {
   const person = {
@@ -25,6 +26,8 @@ function App() {
       <Header />
       <AboutSection />
       <Footer />
+
+      <PersonCard name={"Gabriel"} surname={"Matoso"} age={28} />
     </>
   )
 }
